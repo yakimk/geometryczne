@@ -12,12 +12,8 @@
 \usepackage{subcaption}
 \usepackage{accsupp}
 \usepackage{array}
-\usepackage{multirow}
-\usepackage{amsmath, siunitx}    
-\usepackage{pgfplots}
-\usepackage{pgfplotstable}
-\graphicspath{ {./images/} }
-\pgfplotsset{compat = newest}
+\usepackage{amsfonts}
+\graphicspath{ {./img/} }
 
 \usetikzlibrary{angles,quotes}
 \makeatletter
@@ -28,22 +24,24 @@
 \tytul{Laboratorium 1}
 \podtytul{Ćwiczenie wprowadzające}
 \kierunek{Informatyka}
-\autor{Kyrylo Iakymenko}
+\autor{Kyrylo Iakymenko\\ Czwartek 13:00 - 14:30 tydzień B}
 \data{Kraków, 16 października 2023}
 
 \stronatytulowa{}
 
 \section{Wprowadzenie}
+\input{wprowadzenie.tex}
+\section{Zbiory testowe}
+\input{z_testowe.tex}
+\section{Wykresy}
+\input{wykresy.tex}
 
 
-\section{Opis stanowiska}
 
-\section{Przebieg doświadczenia}
-
-
-\section{Wyniki pomiarów}
+\section{Testy klasyfikacyjne dla różnych wartości $\varepsilon$}
 
 
-\section{Opracowanie wyników}
+\section{Porównywanie czasów klasyfikacji dla różnych funkcji obliczających wyznacznik}
+\section{Testy precyzji float64 i float32}
 \section{Podsumowanie}
 \end{document}
