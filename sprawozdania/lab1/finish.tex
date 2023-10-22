@@ -1,14 +1,11 @@
 \quad Porównując ilość zaklasyfikowanych punktów dla różnych $\varepsilon$ dostaliśmy róźne wyiniki 
 dla róznych metod obliczenia wyznacznika. 
-Klasyfikacja punktów z podpunktów a oraz c dla większości
-przypadków dawała identyczne wyniki niezależnie od użytego
-wyznacznika czy epsilona (tolerancji). Spowodowane jest to tym, że
+Klasyfikacja punktów ze zbiorów a oraz c dawała podobne wyniki niezależnie od użytej
+funkcji liczenia wyznacznika czy $\varepsilon$. Spowodowane jest to tym, że
 istnieje bardzo małe prawdopodobieństwo, iż punkt będzie znajdował się
 dokładnie na prostej, z dokładnością do użytej tolerancji. W podpunkcie
 b wybór epsilona nie miał znaczenia jednak wybór wyznacznika już tak.
-Jest to spowodowane
-najprawdopodobniej tym, że współrzędne tych punktów mają duże
-wartości bezwzględne. Operacja klasyfikacji punktów wymaga jednak
+Jest to spowodowane dużymi odległościami pomiędzy punktami. Operacja klasyfikacji punktów wymaga jednak
 dużej precyzji, która jest tracona z powodu dużych wartości które są
 generowane. Z tego możemy dojść do wniosku, że użycie wyznaczników $3 \times 3$ daje 
 nam większą precyzje w obliczeniach, a też patrząc na wyniki porównania wydajności funkcji 

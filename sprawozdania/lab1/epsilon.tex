@@ -1,3 +1,38 @@
+\subsection{Algorytmy generacji zbiorów}
+\quad 1. Dla zbiorów a i b.
+ \begin{lstlisting}
+  def generate_uniform_points(left, right, n = 10 ** 5):
+    points = []
+    for i in range(n):
+        x = np.random.uniform(left, right)
+        y = np.random.uniform(left, right)
+        points.append((x, y))
+
+    return points
+\end{lstlisting}
+\par
+2. Dla zbioru c.
+\begin{lstlisting}
+  def generate_circle_points(O, R, n = 1000):
+    points = []
+    for _ in range(n):
+        angle = 2 * np.pi * np.random.uniform()
+        points.append((R * np.cos(angle), R * np.sin(angle)))
+    return points
+\end{lstlisting}
+\par
+3. Dla zbioru d.
+\begin{lstlisting}
+  def generate_collinear_points(a, b, n=100):
+    points = []
+    xt = b[0] - a[0]
+    yt = b[1] - a[1]
+    for i in range(n):
+        t = np.random.uniform()
+        points.append((xt * t + a[0], yt * t + a[1] ))
+    
+    return points
+\end{lstlisting}
 \subsection{Przykładowe wykresy dal $\varepsilon = 10^{-4}$.}
 \begin{figure}[h]
     \centering
@@ -52,20 +87,20 @@
             \includegraphics[scale=0.6]{eps_compar2.png}
             \caption*{Własna funkcja $2\times 2$.}
              \end{figure}
-             -
+             \null
              \newpage 
              \centerline{\rule{20cm}{0.4pt}}
 \subsection{Analiza wyników}
 \quad Na potrzeby analizy danych wybierzemy wyniki dla bibliotecznej 
 funkcji liczenia wyznacznika $3 \times 3$.
 \begin{enumerate}
-    \item W zbiorze $a$ dla $\varepsilon \leq 10^{-2}$ widzimy brak zmian 
+    \item \quad W zbiorze $a$ dla $\varepsilon \leq 10^{-2}$ widzimy brak zmian 
 w ilości zaklasyfikowanych do różnych zbiorów punktów. Także charakterystyczną dla tego $\varepsilon$ 
-cechą można nazwać $0$ punktów rozpoznanych jako leżące na prostej.\\
-Żeby zweryfikować nasze wyniki policzmy prawdopodobieństwo, że punkt w naszym zbiorze zostanie 
+cechą można nazwać $0$ punktów rozpoznanych jako leżące na prostej.\par
+\quad Żeby zweryfikować nasze wyniki policzmy prawdopodobieństwo, że punkt w naszym zbiorze zostanie 
 wylosowany w miejscu dla którego będzie zaklasyfikowany, jako należący do prostej. 
-W naszych obliczeniach dla prostoty pominiemy niepewności związane z obliczeniami komputerowymi.\\
-Klasyfikujemy punkty do odpowiedniej grupy obliczając iloczyn wektorowy
+W naszych obliczeniach dla prostoty pominiemy niepewności związane z obliczeniami komputerowymi.\par
+\quad Klasyfikujemy punkty do odpowiedniej grupy obliczając iloczyn wektorowy
 $\overrightarrow{ab} \times \overrightarrow{ac}$, gdzie $ c = (x,y)$ jest punktem, dla którego poszukujemy wiadomości o lokalizacji względem prostej przechodzącej przez punkty $ a$ i $ b$. Metoda ta jest równoznaczna z obliczeniem wyznacznika macierzy $ 2\times2$:  
 
 $$
@@ -73,19 +108,19 @@ $$
        a_{x} - c_{x} & a_{y} - c_{y} \\
        b_{x} - c_{x} & b_{y} - c_{y} 
               \end{vmatrix}.
-$$\\
+$$\par
 Wiemy także, że iloczyn wektorowy $\overrightarrow{A} \times \overrightarrow{B}$ można także obliczyć ze wzoru: 
 $$
 \overrightarrow{A} \times \overrightarrow{B} = ||A|| \cdot ||B|| \cdot \sin{\theta}.
 $$
-Gdzie $\sin{\theta}$ to kąt pomiędzy wektorami $\overrightarrow{A}$ i $\overrightarrow{B}$.\\
+\quad Gdzie $\sin{\theta}$ to kąt pomiędzy wektorami $\overrightarrow{A}$ i $\overrightarrow{B}$.\\
 Wybierzmy teraz dla konkretnego punktu $c$ takie $a$ i $b$ na prostej, żeby 
 \begin{enumerate}
     \item Dla $A = \overrightarrow{ab}, ||{A}|| = 1$.
     \item $\sin{\theta} = 1$, gdzie $\theta$ jest kątem pomiędzy $\overrightarrow{ab}$ i $\overrightarrow{ac}$ (wektor $\overrightarrow{ac}$ jest prostopadły do naszej prostej i do wektora $\overrightarrow{ab}$).
 \end{enumerate}
 Wtedy nasz iloczyn $$\overrightarrow{A} \times \overrightarrow{B} = ||A|| \cdot ||B|| = 1 \cdot ||B|| = ||B||.$$
-I pytanie klasyfikacji punktu jako należacego do prostej sprowadza się do sprawdzenia czy $||B|| < \varepsilon$.
+\quad I pytanie klasyfikacji punktu jako należacego do prostej sprowadza się do sprawdzenia czy $||B|| < \varepsilon$.
 Dla zbioru $a$ długość prostej o równaniu $y = \frac{1}{20}x - 1$ na całym zbiorze $(-1000, 1000)$ jest równa 
 $$
     \sqrt{(y(1000) - y(-1000))^2 + (1000 + 1000)^2} = \sqrt{10 ^ 4 + 4 \cdot 10^6} = \sqrt{4,01 \cdot 10^6} \approx 2 \cdot 10^3.
@@ -99,23 +134,23 @@ $$
     \frac{4 \cdot 10^3 \cdot \varepsilon}{(1000 - (-1000))^2}=
     \frac{4 \cdot 10^3 \cdot \varepsilon}{4 \cdot 10^6} =  10^{-3} \cdot \varepsilon.
 $$
-Patrząc na ten wynik dla $\varepsilon = 10^{-2}$ nie jest zadziwiające to, że 
+\quad Patrząc na ten wynik dla $\varepsilon = 10^{-2}$ nie jest zadziwiające to, że 
 żaden z $10^5$ punktów nie został zakwalifikowany jako leżący na prostej. Gdzyż prawdopodobieństwo 
 wylosowania takiego punktu to tylko $10^{-5}$.
-\item Dla zbioru b widzimy, że dla wszystkich $10^{-20} < \varepsilon < 10^5$ dostajemy ten sam wynik 
+\item \quad Dla zbioru b widzimy, że dla wszystkich $10^{-20} < \varepsilon < 10^5$ dostajemy ten sam wynik 
 , czego też warto było się spodziewać gdzyż stosując metodę opisaną w poprzednim podpunkcie dostajemy 
 prawdopodobieństwo wylosowania punktu leżącego na prostej 
 $$
     \frac{4 \cdot 10^{14} \cdot \varepsilon}{(10^{14} - (-10^{14}))^2}=
     \frac{4 \cdot 10^{14} \cdot \varepsilon}{4 \cdot 10^{28}} =  10^{-14} \cdot \varepsilon.
 $$
-Czyli nawet dla $\varepsilon = 10^5$ prawdopodobieństwo, że conajmniej z $10^5$ punktów zostanie zaklasyfikowany 
+\quad Czyli nawet dla $\varepsilon = 10^5$ prawdopodobieństwo, że conajmniej z $10^5$ punktów zostanie zaklasyfikowany 
 do prostej to około $10^{-4}$.
-\item Dla zbioru c widzimy podobną sytuację. Dla $\varepsilon > 10^{-2}$ 
+\item \quad Dla zbioru c widzimy podobną sytuację. Dla $\varepsilon > 10^{-2}$ 
 każde zmniejszenie $\varepsilon$ powoduje ogromne zmiany w wynikach, ale podalsze zwiększenie precyzji 
 nie ma żadnego efektu na wynikach.
 
-\item Dla zbioru d zmniejszenie $\varepsilon$ ma największe znaczenie ze wszystkich. 
+\item \quad Dla zbioru d zmniejszenie $\varepsilon$ ma największe znaczenie ze wszystkich. 
 Nawet przejście pomiędzy $\varepsilon = 10^{-16}$ do $\varepsilon = 10^{-18}$ ma ogromne znaczenie 
 na ilości punktów zakwalifikowanych do prostej.
 \end{enumerate}
