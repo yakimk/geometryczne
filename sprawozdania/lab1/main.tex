@@ -13,6 +13,8 @@
 \usepackage{accsupp}
 \usepackage{array}
 \usepackage{amsfonts}
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath, xparse}
 \graphicspath{ {./img/} }
 
 \usetikzlibrary{angles,quotes}
@@ -39,9 +41,12 @@
 
 
 \section{Testy klasyfikacyjne dla różnych wartości $\varepsilon$}
-
+\input{epsilon.tex}
 
 \section{Porównywanie czasów klasyfikacji dla różnych funkcji obliczających wyznacznik}
+\input{wyz.tex}
 \section{Testy precyzji float64 i float32}
+\input{float.tex}
 \section{Podsumowanie}
+\input{finish.tex}
 \end{document}
