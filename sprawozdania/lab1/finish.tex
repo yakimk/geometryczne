@@ -1,0 +1,26 @@
+\quad Porównując ilość zaklasyfikowanych punktów dla różnych $\varepsilon$ dostaliśmy róźne wyiniki 
+dla róznych metod obliczenia wyznacznika. 
+Klasyfikacja punktów z podpunktów a oraz c dla większości
+przypadków dawała identyczne wyniki niezależnie od użytego
+wyznacznika czy epsilona (tolerancji). Spowodowane jest to tym, że
+istnieje bardzo małe prawdopodobieństwo, iż punkt będzie znajdował się
+dokładnie na prostej, z dokładnością do użytej tolerancji. W podpunkcie
+b wybór epsilona nie miał znaczenia jednak wybór wyznacznika już tak.
+Jest to spowodowane
+najprawdopodobniej tym, że współrzędne tych punktów mają duże
+wartości bezwzględne. Operacja klasyfikacji punktów wymaga jednak
+dużej precyzji, która jest tracona z powodu dużych wartości które są
+generowane. Z tego możemy dojść do wniosku, że użycie wyznaczników $3 \times 3$ daje 
+nam większą precyzje w obliczeniach, a też patrząc na wyniki porównania wydajności funkcji 
+liczących wyznacznik, są wykonywane tak samo szybko, jak i funkcje liczenia wyznacznika $2 \times 2$.
+\par
+\quad Patrząc na porównanie precyzji float64 z float32, możemy dojść do wniosku, 
+że float64 daje (jak wypadało się spodziewać) dużo większą precyzje obliczeń. 
+Widoczna jest poważna różnica w obliczeniach już dla $\varepsilon = 10^{-12}$. 
+Na tej podstawie na potrzeby algorytmów geometrycznych zalecane jest 
+używanie float64.
+\par
+\quad We wszystkich testach i porównaniach statystycznych dostaliśmy 
+wyniki, które zgadzały się z wartościami teoretycznymi. Na tej 
+podstawie możemy dojść do wniosku, że w obliczeniach nie było poważnych 
+błędów i ćwiczenie było wykonane poprawnie.

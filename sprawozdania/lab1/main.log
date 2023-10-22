@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  22 OCT 2023 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  22 OCT 2023 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,7 +512,29 @@ Package: xparse 2022-01-12 L3 Experimental document command parser
 File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -663,47 +685,98 @@ Package pdftex.def Info: ./img//4.png  used on input line 28.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./epsilon.tex
-<./img//eps_compar.png, id=24, 756.8275pt x 394.47375pt>
-File: ./img//eps_compar.png Graphic file (type png)
-<use ./img//eps_compar.png>
-Package pdftex.def Info: ./img//eps_compar.png  used on input line 5.
-(pdftex.def)             Requested size: 454.1pt x 236.68607pt.
+<./img//1k.png, id=24, 1019.81pt x 744.7825pt>
+File: ./img//1k.png Graphic file (type png)
+<use ./img//1k.png>
+Package pdftex.def Info: ./img//1k.png  used on input line 6.
+(pdftex.def)             Requested size: 204.85846pt x 149.60162pt.
+<./img//2k.png, id=25, 1010.77625pt x 773.89125pt>
+File: ./img//2k.png Graphic file (type png)
+<use ./img//2k.png>
+Package pdftex.def Info: ./img//2k.png  used on input line 12.
+(pdftex.def)             Requested size: 204.85846pt x 156.84201pt.
+ [2 <./img//./wyznaczniki.png> <./img//1.png> <./img//2.png>]
+<./img//3k.png, id=45, 1004.75375pt x 736.7525pt>
+File: ./img//3k.png Graphic file (type png)
+<use ./img//3k.png>
+Package pdftex.def Info: ./img//3k.png  used on input line 23.
+(pdftex.def)             Requested size: 204.85846pt x 150.21457pt.
+<./img//4k.png, id=46, 975.645pt x 732.7375pt>
+File: ./img//4k.png Graphic file (type png)
+<use ./img//4k.png>
+Package pdftex.def Info: ./img//4k.png  used on input line 29.
+(pdftex.def)             Requested size: 204.85846pt x 153.84587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--6
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-[2 <./img//./wyznaczniki.png> <./img//1.png> <./img//2.png>] [3 <./img//3.png> <./img//4.png> <./img//eps_compar.png>]) (./wyz.tex
-<./img//wyz.png, id=51, 572.1375pt x 63.23625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+
+ []
+
+<./img//eps_compar.png, id=47, 756.8275pt x 394.47375pt>
+File: ./img//eps_compar.png Graphic file (type png)
+<use ./img//eps_compar.png>
+Package pdftex.def Info: ./img//eps_compar.png  used on input line 40.
+(pdftex.def)             Requested size: 454.1pt x 236.68607pt.
+<./img//eps_compar2l.png, id=48, 756.8275pt x 394.47375pt>
+File: ./img//eps_compar2l.png Graphic file (type png)
+<use ./img//eps_compar2l.png>
+Package pdftex.def Info: ./img//eps_compar2l.png  used on input line 44.
+(pdftex.def)             Requested size: 454.1pt x 236.68607pt.
+File: ./img//eps_compar.png Graphic file (type png)
+<use ./img//eps_compar.png>
+Package pdftex.def Info: ./img//eps_compar.png  used on input line 48.
+(pdftex.def)             Requested size: 454.1pt x 236.68607pt.
+<./img//eps_compar2.png, id=49, 756.8275pt x 394.47375pt>
+File: ./img//eps_compar2.png Graphic file (type png)
+<use ./img//eps_compar2.png>
+Package pdftex.def Info: ./img//eps_compar2.png  used on input line 52.
+(pdftex.def)             Requested size: 454.1pt x 236.68607pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./img//3.png> <./img//4.png> <./img//1k.png> <./img//2k.png> <./img//3k.png> <./img//4k.png>] [4 <./img//eps_compar.png> <./img//eps_compar2l.png>] [5 <./img//eps_compar2.png>]
+Overfull \hbox (2.9745pt too wide) detected at line 92
+[] \OT1/cmr/m/n/12 = [] = [] \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 10[]\OML/cmm/m/it/12 :
+ []
+
+) (./wyz.tex
+<./img//wyz.png, id=71, 572.1375pt x 63.23625pt>
 File: ./img//wyz.png Graphic file (type png)
 <use ./img//wyz.png>
 Package pdftex.def Info: ./img//wyz.png  used on input line 1.
 (pdftex.def)             Requested size: 343.28514pt x 37.94203pt.
-) (./float.tex
-<./img//eps.png, id=52, 572.1375pt x 93.34875pt>
+) [6] (./float.tex
+<./img//eps.png, id=75, 572.1375pt x 93.34875pt>
 File: ./img//eps.png Graphic file (type png)
 <use ./img//eps.png>
 Package pdftex.def Info: ./img//eps.png  used on input line 1.
 (pdftex.def)             Requested size: 343.28514pt x 56.00967pt.
-) (./finish.tex) [4 <./img//wyz.png> <./img//eps.png>] (./main.aux)
+) (./finish.tex) [7 <./img//wyz.png> <./img//eps.png>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 19815 strings out of 480139
- 383310 string characters out of 5893692
- 752128 words of memory out of 5000000
- 37372 multiletter control sequences out of 15000+600000
- 487978 words of font info for 79 fonts, out of 8000000 for 9000
+ 19876 strings out of 480139
+ 384395 string characters out of 5893692
+ 758167 words of memory out of 5000000
+ 37423 multiletter control sequences out of 15000+600000
+ 490153 words of font info for 88 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  84i,14n,89p,447b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (4 pages, 519289 bytes).
+ </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (7 pages, 921828 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 420 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
