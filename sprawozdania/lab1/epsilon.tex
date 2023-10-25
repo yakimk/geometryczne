@@ -1,40 +1,7 @@
-\subsection{Algorytmy generacji zbiorów}
-\quad 1. Dla zbiorów a i b.
- \begin{lstlisting}
-  def generate_uniform_points(left, right, n = 10 ** 5):
-    points = []
-    for i in range(n):
-        x = np.random.uniform(left, right)
-        y = np.random.uniform(left, right)
-        points.append((x, y))
 
-    return points
-\end{lstlisting}
-\par
-2. Dla zbioru c.
-\begin{lstlisting}
-  def generate_circle_points(O, R, n = 1000):
-    points = []
-    for _ in range(n):
-        angle = 2 * np.pi * np.random.uniform()
-        points.append((R * np.cos(angle), R * np.sin(angle)))
-    return points
-\end{lstlisting}
-\par
-3. Dla zbioru d.
-\begin{lstlisting}
-  def generate_collinear_points(a, b, n=100):
-    points = []
-    xt = b[0] - a[0]
-    yt = b[1] - a[1]
-    for i in range(n):
-        t = np.random.uniform()
-        points.append((xt * t + a[0], yt * t + a[1] ))
-    
-    return points
-\end{lstlisting}
 \subsection{Przykładowe wykresy dla $\varepsilon = 10^{-4}$.}
-\begin{figure}[h]
+\null
+\begin{figure}[!ht]
     \centering
     \begin{subfigure}{.5\textwidth}
       \centering
@@ -51,7 +18,7 @@
     \label{fig:test}
     \end{figure}
     
-    \begin{figure}[h]
+    \begin{figure}[!ht]
     \centering
     \begin{minipage}{.5\textwidth}
       \centering
@@ -66,6 +33,7 @@
       \label{fig:test2}
     \end{minipage}
     \end{figure}
+    % \newpage
 \subsection{Tabele}
 \quad Poniżej przedstawione są tabele ilości zaklasyfikowanych punktów
  ze zbiorów \\ (a, b, c, d) ze względu na ich położenie od prostej, $\varepsilon$ tolerancje
@@ -88,9 +56,13 @@
             \caption*{Własna funkcja $2\times 2$.}
              \end{figure}
              \null
-             \newpage 
+             \newpage
              \centerline{\rule{20cm}{0.4pt}}
-\subsection{Analiza wyników}
+             \newpage
+
+
+
+             \subsection{Analiza wyników}
 \quad Na potrzeby analizy danych wybierzemy wyniki dla bibliotecznej 
 funkcji liczenia wyznacznika $3 \times 3$.
 \begin{enumerate}
@@ -144,7 +116,7 @@ $$
     \frac{4 \cdot 10^{14} \cdot \varepsilon}{(10^{14} - (-10^{14}))^2}=
     \frac{4 \cdot 10^{14} \cdot \varepsilon}{4 \cdot 10^{28}} =  10^{-14} \cdot \varepsilon.
 $$
-\quad Czyli nawet dla $\varepsilon = 10^5$ prawdopodobieństwo, że conajmniej z $10^5$ punktów zostanie zaklasyfikowany 
+\quad Czyli nawet dla $\varepsilon = 10^5$ prawdopodobieństwo, że conajmniej jeden z $10^5$ punktów zostanie zaklasyfikowany 
 do prostej to około $10^{-4}$.
 \item \quad Dla zbioru c widzimy podobną sytuację. Dla $\varepsilon > 10^{-2}$ 
 każde zmniejszenie $\varepsilon$ powoduje ogromne zmiany w wynikach, ale podalsze zwiększenie precyzji 

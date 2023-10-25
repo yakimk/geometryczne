@@ -1,0 +1,6 @@
+Dla poprawnego działania programu powinny być zainstalowane następujące pakiety:
+1. Numpy
+2. Pandas
+3. Bit-alg program dla wizualizacji.
+4. IPython
+5. dataframe_image

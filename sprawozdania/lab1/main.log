@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  22 OCT 2023 14:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  25 OCT 2023 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,87 +495,82 @@ Package pdftex.def Info: ./img//4.png  used on input line 28.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./epsilon.tex [2 <./img//./wyznaczniki.png> <./img//1.png> <./img//2.png>]
+[2 <./img//./wyznaczniki.png> <./img//1.png> <./img//2.png>]
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
+(Font)              size <12> substituted on input line 37.
 
-<./img//1k.png, id=40, 1019.81pt x 744.7825pt>
+[3 <./img//3.png> <./img//4.png>]) (./epsilon.tex
+<./img//1k.png, id=47, 1019.81pt x 744.7825pt>
 File: ./img//1k.png Graphic file (type png)
 <use ./img//1k.png>
-Package pdftex.def Info: ./img//1k.png  used on input line 41.
+Package pdftex.def Info: ./img//1k.png  used on input line 8.
 (pdftex.def)             Requested size: 204.85846pt x 149.60162pt.
-<./img//2k.png, id=41, 1010.77625pt x 773.89125pt>
+<./img//2k.png, id=48, 1010.77625pt x 773.89125pt>
 File: ./img//2k.png Graphic file (type png)
 <use ./img//2k.png>
-Package pdftex.def Info: ./img//2k.png  used on input line 47.
+Package pdftex.def Info: ./img//2k.png  used on input line 14.
 (pdftex.def)             Requested size: 204.85846pt x 156.84201pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./img//3k.png, id=42, 1004.75375pt x 736.7525pt>
+<./img//3k.png, id=49, 1004.75375pt x 736.7525pt>
 File: ./img//3k.png Graphic file (type png)
 <use ./img//3k.png>
-Package pdftex.def Info: ./img//3k.png  used on input line 58.
+Package pdftex.def Info: ./img//3k.png  used on input line 25.
 (pdftex.def)             Requested size: 204.85846pt x 150.21457pt.
-<./img//4k.png, id=43, 975.645pt x 732.7375pt>
+<./img//4k.png, id=50, 975.645pt x 732.7375pt>
 File: ./img//4k.png Graphic file (type png)
 <use ./img//4k.png>
-Package pdftex.def Info: ./img//4k.png  used on input line 64.
+Package pdftex.def Info: ./img//4k.png  used on input line 31.
 (pdftex.def)             Requested size: 204.85846pt x 153.84587pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--73
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--73
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
 
-<./img//eps_compar.png, id=44, 756.8275pt x 394.47375pt>
+<./img//eps_compar.png, id=51, 756.8275pt x 394.47375pt>
 File: ./img//eps_compar.png Graphic file (type png)
 <use ./img//eps_compar.png>
-Package pdftex.def Info: ./img//eps_compar.png  used on input line 75.
+Package pdftex.def Info: ./img//eps_compar.png  used on input line 43.
 (pdftex.def)             Requested size: 454.1pt x 236.68607pt.
-<./img//eps_compar2l.png, id=45, 756.8275pt x 394.47375pt>
+<./img//eps_compar2l.png, id=52, 756.8275pt x 394.47375pt>
 File: ./img//eps_compar2l.png Graphic file (type png)
 <use ./img//eps_compar2l.png>
-Package pdftex.def Info: ./img//eps_compar2l.png  used on input line 79.
+Package pdftex.def Info: ./img//eps_compar2l.png  used on input line 47.
 (pdftex.def)             Requested size: 454.1pt x 236.68607pt.
 File: ./img//eps_compar.png Graphic file (type png)
 <use ./img//eps_compar.png>
-Package pdftex.def Info: ./img//eps_compar.png  used on input line 83.
+Package pdftex.def Info: ./img//eps_compar.png  used on input line 51.
 (pdftex.def)             Requested size: 454.1pt x 236.68607pt.
-<./img//eps_compar2.png, id=46, 756.8275pt x 394.47375pt>
+<./img//eps_compar2.png, id=53, 756.8275pt x 394.47375pt>
 File: ./img//eps_compar2.png Graphic file (type png)
 <use ./img//eps_compar2.png>
-Package pdftex.def Info: ./img//eps_compar2.png  used on input line 87.
+Package pdftex.def Info: ./img//eps_compar2.png  used on input line 55.
 (pdftex.def)             Requested size: 454.1pt x 236.68607pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./img//3.png> <./img//4.png>] [4 <./img//1k.png> <./img//2k.png> <./img//3k.png> <./img//4k.png> <./img//eps_compar.png>] [5 <./img//eps_compar2l.png>]
-Overfull \hbox (2.9745pt too wide) detected at line 127
+[4 <./img//1k.png> <./img//2k.png> <./img//3k.png> <./img//4k.png>] [5 <./img//eps_compar.png> <./img//eps_compar2l.png>] [6 <./img//eps_compar2.png>]
+Overfull \hbox (2.9745pt too wide) detected at line 99
 [] \OT1/cmr/m/n/12 = [] = [] \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 10[]\OML/cmm/m/it/12 :
  []
 
-[6 <./img//eps_compar2.png>]) (./wyz.tex
-<./img//wyz.png, id=72, 572.1375pt x 63.23625pt>
+) (./wyz.tex [7]
+<./img//wyz.png, id=76, 572.1375pt x 63.23625pt>
 File: ./img//wyz.png Graphic file (type png)
 <use ./img//wyz.png>
 Package pdftex.def Info: ./img//wyz.png  used on input line 8.
 (pdftex.def)             Requested size: 343.28514pt x 37.94203pt.
 ) (./float.tex
-<./img//eps.png, id=73, 572.1375pt x 93.34875pt>
+<./img//eps.png, id=77, 572.1375pt x 93.34875pt>
 File: ./img//eps.png Graphic file (type png)
 <use ./img//eps.png>
 Package pdftex.def Info: ./img//eps.png  used on input line 8.
 (pdftex.def)             Requested size: 343.28514pt x 56.00967pt.
-) (./finish.tex [7 <./img//wyz.png> <./img//eps.png>]) [8] (./main.aux)
+) (./finish.tex) [8 <./img//wyz.png> <./img//eps.png>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -587,15 +582,15 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  9685 strings out of 480139
  154722 string characters out of 5893692
- 491626 words of memory out of 5000000
+ 486626 words of memory out of 5000000
  27457 multiletter control sequences out of 15000+600000
  490490 words of font info for 89 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  70i,14n,76p,351b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (8 pages, 927863 bytes).
+Output written on main.pdf (8 pages, 928712 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
+ 440 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)

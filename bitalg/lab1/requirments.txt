@@ -1,4 +1,0 @@
-1. Numpy
-2. Jupyter Notebook
-3. Bit-alg program dla wizualizacji.
-4. nbextensions

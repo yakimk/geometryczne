@@ -30,3 +30,40 @@
       \label{fig:test2}
     \end{minipage}
     \end{figure}
+
+    \subsection{Algorytmy generacji zbiorów}
+\quad 1. Dla zbiorów a i b.
+ \begin{lstlisting}
+  def generate_uniform_points(left, right, n = 10 ** 5):
+    points = []
+    for i in range(n):
+        x = np.random.uniform(left, right)
+        y = np.random.uniform(left, right)
+        points.append((x, y))
+
+    return points
+\end{lstlisting}
+\par
+2. Dla zbioru c.
+\begin{lstlisting}
+  def generate_circle_points(O, R, n = 1000):
+    points = []
+    for _ in range(n):
+        angle = 2 * np.pi * np.random.uniform()
+        points.append((R * np.cos(angle), R * np.sin(angle)))
+    return points
+\end{lstlisting}
+\par
+3. Dla zbioru d.
+\begin{lstlisting}
+  def generate_collinear_points(a, b, n=100):
+    points = []
+    xt = b[0] - a[0]
+    yt = b[1] - a[1]
+    for i in range(n):
+        t = np.random.uniform()
+        points.append((xt * t + a[0], yt * t + a[1] ))
+    
+    return points
+\end{lstlisting}
+\newpage
