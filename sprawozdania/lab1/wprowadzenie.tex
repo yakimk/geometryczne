@@ -4,11 +4,6 @@ losowych punktów oraz badanie metod klasyfikacji położenia punktów na płasz
 względem prostej. 
 \subsection{Położenie punktu względem prostej}
 
-\begin{wrapfigure}{r}{0.5\textwidth}
-
-\includegraphics[width=7cm,scale=0.5]{./wyznaczniki.png}
-\end{wrapfigure}
-
 \quad Położenie punktu względem prostej będziemy wyznaczać obliczjąc
 dane wyznaczniki. Wyznaczniki pozwalają określić położenie
 punktu c względem prostej która jest wyznaczona przez punkty a i b.
@@ -21,3 +16,17 @@ jest równa 0 (lub jej wartość bezwzględna $< \varepsilon$) to punkt leży na
 powyższe wyznaczniki są sobie równoważne to na skutek
 niedoskonałości reprezentacji liczb rzeczywistych w komputerze wyniki
 mogą się różnić w zależności od użytego wyznacznika.
+
+$$
+(1)\det(a, b, c)= \begin{vmatrix}
+       a_{x} - c_{x} & a_{y} - c_{y} \\
+       b_{x} - c_{x} & b_{y} - c_{y} 
+              \end{vmatrix}.\\
+              $$
+              $$
+(2)\det(a, b, c) = \begin{vmatrix}
+    a_x & a_y & 1\\
+    b_x & b_y & 1\\
+    c_x & c_y & 1
+\end{vmatrix}.\\
+$$
