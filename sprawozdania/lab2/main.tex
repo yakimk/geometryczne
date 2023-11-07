@@ -2,22 +2,22 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
-\usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{graphicx}
-\usepackage{lipsum}
 \usepackage{wrapfig}
 \usepackage{subcaption}
 \usepackage{accsupp}
 \usepackage{array}
-\usepackage{multirow}
-\usepackage{amsmath, siunitx}
+\usepackage{amsfonts}
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath, xparse}
+\usepackage{listings}
 \usepackage{booktabs}
+
 \graphicspath{ {./images/} }
 
-\usetikzlibrary{angles,quotes}
 \makeatletter
 
 \begin{document}
@@ -32,14 +32,17 @@
 \stronatytulowa{}
 
 \section{Wprowadzenie}
-\input{tab.tex}
 
 \section{Opis stanowiska}
 
 \section{Przebieg doświadczenia}
 
 
-\section{Wyniki pomiarów}
+\section{Wydajność algorytmów}
+\subsection{Zbiory testowe}
+\input{ztestowe.tex}
+\subsection{Tabele}
+\input{tab.tex}
 
 
 \section{Opracowanie wyników}
