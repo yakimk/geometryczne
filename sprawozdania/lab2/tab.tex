@@ -2,54 +2,57 @@
 \renewcommand{\arraystretch}{2}
 \begin{table}[!ht]
     \centering
-\begin{tabular}{l  r| r| r| r|r|}
-     & \multicolumn{5}{c}{\textbf{Liczba punktów}} \\ \cline{2-6}     
-     \multicolumn{1}{l|}{\textbf{Algorytm}} & {100} & 1000 & 10000 & 100000 & 1000000 \\
-    \hline
-    \hline
-    \multicolumn{1}{l|}{\textbf{Graham}} & 0.001&	0.007&	0.088	&1.222&	15.013 \\
-    \hline
-    \multicolumn{1}{l|}{\textbf{Jarvis}} & 0.001	&0.010	&0.107	&1.771	&25.266 \\
-    \cline{2-6}
+\begin{tabular}{l  r|r|r|r|r|}
+    & \multicolumn{5}{c}{\textbf{Liczba punktów}} \\ \cline{2-6}     
+    \multicolumn{1}{l|}{\textbf{Algorytm}} & 100& 1000& 10000& 100000& 1000000 \\
+   \hline
+   \hline
+   \multicolumn{1}{l|}{\textbf{Graham}} & 0.001& 0.007& 0.088& 1.222& 15.013 \\
+   \hline
+   \multicolumn{1}{l|}{\textbf{Jarvis}} & 0.001& 0.01& 0.107& 1.771& 25.266 \\
+   \cline{2-6}
 \end{tabular}
 \caption*{Tabela 1: Czasy wykonania algorytmów na zbiorze testowym $a$.}
 \end{table}
 
-\begin{table}[ht]
+
+\begin{table}[!ht]
     \centering
-\begin{tabular}{l  r|r|r|r|}
-    & \multicolumn{4}{c}{\textbf{Liczba punktów}} \\ \cline{2-5}     
-    \multicolumn{1}{l|}{\textbf{Algorytm}} & 10& 100& 1000& 10000 \\
+\begin{tabular}{l  r|r|r|}
+    & \multicolumn{3}{c}{\textbf{Liczba punktów}} \\ \cline{2-4}     
+    \multicolumn{1}{l|}{\textbf{Algorytm}} & 100& 1000& 10000 \\
    \hline
    \hline
-   \multicolumn{1}{l|}{\textbf{Graham}} & 0.0& 0.002& 0.023& 0.132 \\
+   \multicolumn{1}{l|}{\textbf{Graham}} & 0.001& 0.011& 0.13 \\
    \hline
-   \multicolumn{1}{l|}{\textbf{Jarvis}} & 0.0& 0.033& 0.727& 77.841 \\
-   \cline{2-5}
+   \multicolumn{1}{l|}{\textbf{Jarvis}} & 0.008& 0.678& 70.709 \\
+   \cline{2-4}
 \end{tabular}
 \caption*{Tabela 2: Czasy wykonania algorytmów na zbiorze testowym $b$.}
 \end{table}
 
-\begin{table}[ht]
-    \centering
-\begin{tabular}{l  r|r|r|r|r|}
-    & \multicolumn{5}{c}{\textbf{Liczba punktów}} \\ \cline{2-6}     
-    \multicolumn{1}{l|}{\textbf{Algorytm}} &  10& 100& 1000& 10000& 100000 \\
-   \hline
-   \hline
-   \multicolumn{1}{l|}{\textbf{Graham}} & 0.0& 0.004& 0.056& 0.759& 9.165 \\
-   \hline
-   \multicolumn{1}{l|}{\textbf{Jarvis}} & 0.0& 0.001& 0.011& 0.117& 1.254 \\
-   \cline{2-6}
-\end{tabular}
-\caption*{Tabela 3: Czasy wykonania algorytmów na zbiorze testowym $c$.}
-\end{table}
 
 \begin{table}[!ht]
     \centering
 \begin{tabular}{l  r|r|r|r|r|}
     & \multicolumn{5}{c}{\textbf{Liczba punktów}} \\ \cline{2-6}     
-    \multicolumn{1}{l|}{\textbf{Algorytm}} &  100& 1000& 10000& 100000& 1000000 \\
+    \multicolumn{1}{l|}{\textbf{Algorytm}} & 100& 1000& 10000& 100000& 1000000 \\
+   \hline
+   \hline
+   \multicolumn{1}{l|}{\textbf{Graham}} & 0.005& 0.064& 0.739& 9.177& 113.494 \\
+   \hline
+   \multicolumn{1}{l|}{\textbf{Jarvis}} & 0.001& 0.009& 0.115& 1.242& 13.464 \\
+   \cline{2-6}
+\end{tabular}
+\caption*{Tabela 3: Czasy wykonania algorytmów na zbiorze testowym $c$.}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+\begin{tabular}{l  r|r|r|r|r|}
+    & \multicolumn{5}{c}{\textbf{Liczba punktów}} \\ \cline{2-6}     
+    \multicolumn{1}{l|}{\textbf{Algorytm}} & 100& 1000& 10000& 100000& 1000000 \\
    \hline
    \hline
    \multicolumn{1}{l|}{\textbf{Graham}} & 0.002& 0.027& 0.212& 2.816& 37.919 \\
