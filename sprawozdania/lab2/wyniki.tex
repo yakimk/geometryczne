@@ -1,0 +1,20 @@
+\quad Krótko omówimy dlaczego zostały wybrane takie zbiory do testowania algorytmów oraz jakie problemy były tym spowodowane.
+\par
+Zbiór $a$ to po prostu zbiór losowych, więc w naszy przypadku jest przydatny, jako weryfikujący działanie algorytmów w przypadku najbardziej ogólnym. 
+Zbiór $b$ (okrąg) jest zbiorem, który stwarza najwięcej problemów dla algorytmu Jarvisa (dokładniej omówione poniżej) i potrzebny dla demonstracji różnicy pomiędzy dwoma algorytmami w 
+przypadku skrajnym. Zbiory $c$ i $d$ charakteryzują się małą otoczką wypukłą oraz dużą ilością punktów współliniowych. To jest dobrą demostracją prtzypadku, dla którego algorytm Jarvisa jest bardziej wydajny, 
+oraz testuje naszą możliwość wyznaczania punktów współliniowych w algorytmie Grahama.
+\par Omówimy teraz otrzymane wyniki czasów wykonania obu algorytmów dla zbiorów testowych. 
+\begin{enumerate}[a)]
+    \item Dla zbiorów lososwych w których ilość punktów była mniejsza od $10^4$ algorytm Grahama i Jarvisa 
+    mają prawie identyczne czasy wykonania. Dla zbiorów o większej mocy Graham mający mniejszą złożoność, jest 
+    zdecydowanie szybszy, co nie powinno nas dziwić. 
+    \item Dla punktów na okręgu widzimy jeszcze wiekszą przewagę algorytmu Grahama niż z poprzednim zbiorem. 
+    Spowodowane to jest tym, że w okręgu każdy z punktów należy do otoczki wypukłej, a złożoność Jarvisa $O(nh)$, zależy od 
+    ilości punktów w otoczce $h$. Dlatego w pewnym sensie to jest najgorszy przypadek dla algorytmu Jarvisa i jego złożoność staje się $O(n^2)$ w porównaniu do złożoności Grahama $O(nlog(n))$ .
+    \item Sytuację odwrotną widzimy dla prostokąta. Jego otoczka składa się tylko z 4 punktów (wierzchołków). 
+    i w  tym przypadku Jarvis faktycznie ma złożoność liniową, a Graham nadal pozostaje ze złożonością liniowo-logarytmiczną, co wyraźnie wydać po wynikach. 
+    \item Dla kwadratu i jego przekątnych mamy podobną sytuację, jak i w przypadku z prostokątem. Otoczka wypukła tego zbioru punktów składa się 
+    z małej ilości punktów w porównaniu do mocy całego zbioru. To powoduje, że Jarvis jest znacznie bardziej wydajny i llepiej radzi sobie z problemem. 
+    Graham zaczynając od lewego dolnego wierzchołka $p_0$ sortuje wszystkie punkty względem kątów nachylenia prostych do nich prowadzących od $p_0$, to też może powodować niektóre problemy, gdzyż w tym przypadku, jak i w zbiorze $c$, mamy bardzo dużo punktów współliniowych i ich poprawne posortowanie dla zbiorów na dużych zakresach nie jest takie łatwe ze względu na możliwe błędy spowodowane precyzją obliczeń arytmetycznych.
+\end{enumerate}
