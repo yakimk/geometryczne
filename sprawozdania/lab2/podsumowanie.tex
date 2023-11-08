@@ -1,0 +1,19 @@
+W trakcie prowadzenia tego badania przeprowadziliśmy analizę i porównanie dwóch popularnych algorytmów służących do wyznaczania otoczki wypukłej, tj. algorytmów Grahama i Jarvisa. Naszym celem było zrozumienie działania tych algorytmów oraz porównanie ich wydajności przy użyciu różnych zbiorów punktów. Poniżej przedstawiamy główne wnioski z naszych badań:
+
+Algorytm Grahama:
+
+Algorytm Grahama charakteryzuje się złożonością czasową wynoszącą O(n*log(n)), co sprawia, że jest bardziej wydajny niż algorytm Jarvisa.
+Jest efektywny w przypadku zbiorów punktów o większej liczbie elementów, co sprawia, że jest bardziej przydatny w rzeczywistych zastosowaniach.
+Algorytm Jarvisa:
+
+Algorytm Jarvisa jest prosty w implementacji, ale jego złożoność czasowa wynosi O(nh), gdzie "n" to liczba punktów, a "h" to liczba punktów na otoczce wypukłej.
+Jego wydajność maleje znacząco w przypadku zbiorów punktów o dużym rozmiarze, co sprawia, że może być mniej praktyczny w niektórych sytuacjach.
+Porównanie:
+
+W naszych badaniach zaobserwowaliśmy, że algorytm Grahama osiąga lepsze wyniki wydajnościowe niż algorytm Jarvisa, zwłaszcza w przypadku dużych zbiorów punktów.
+Algorytm Grahama jest bardziej efektywny dzięki zastosowaniu sortowania punktów względem kąta względem punktu startowego, co pozwala na znaczne przyspieszenie procesu wyznaczania otoczki wypukłej.
+Podsumowując, zarówno algorytm Grahama, jak i algorytm Jarvisa znajdują zastosowanie w wyznaczaniu otoczki wypukłej, ale wybór między nimi zależy od konkretnych potrzeb i rozmiaru zbioru punktów. Algorytm Grahama jest bardziej efektywny i zwykle bardziej polecany w praktyce, zwłaszcza w przypadku dużych zbiorów punktów, gdzie złożoność czasowa odgrywa kluczową rolę. Jednak algorytm Jarvisa pozostaje przydatnym narzędziem, zwłaszcza w celach edukacyjnych i w przypadku mniejszych zbiorów punktów, gdzie prostota implementacji może mieć znaczenie.
+
+
+
+

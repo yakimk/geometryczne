@@ -16,7 +16,7 @@
 \usepackage{listings}
 \usepackage{booktabs}
 
-\graphicspath{ {./images/} }
+\graphicspath{ {./img/} }
 
 \makeatletter
 
@@ -32,19 +32,21 @@
 \stronatytulowa{}
 
 \section{Wprowadzenie}
+\input{wprowadzenie.tex}
+\section{Opis wykorzystanych algorytmów}
+\input{graham.tex}
+\input{jarvis.tex}
 
-\section{Opis stanowiska}
-
-\section{Przebieg doświadczenia}
-
+\section{Generowanie zbiorów punktów}
+\input{ztestowe.tex}
+\input{wykresy_zbiorow.tex}
 
 \section{Wydajność algorytmów}
-\subsection{Zbiory testowe}
-% \input{ztestowe.tex}
-\subsection{Tabele}
+\input{ztestowe1.tex}
 \input{tab.tex}
 
 
 \section{Opracowanie wyników}
 \section{Podsumowanie}
+\input{podsumowanie.tex}
 \end{document}

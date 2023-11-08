@@ -1,0 +1,22 @@
+\subsection{Algorytm Grahama}Algorytm Grahama to inny popularny algorytm do wyznaczania otoczki wypukłej dla zbioru punktów w przestrzeni dwuwymiarowej. Ten algorytm jest bardziej efektywny niż algorytm Jarvisa i ma złożoność czasową wynoszącą O(n*log(n)), gdzie "n" to liczba punktów w zbiorze. Algorytm Grahama opiera się na wykorzystaniu sortowania punktów względem ich kąta względem punktu startowego.
+
+Poniżej przedstawiam kroki algorytmu Grahama:
+
+Wybierz punkt startowy: Wybieramy punkt startowy, który będzie częścią otoczki wypukłej. Podobnie jak w algorytmie Jarvisa, punkt ten może być dowolnym punktem z dostępnego zbioru punktów. W praktyce często wybiera się punkt o najniższej wartości współrzędnej y (i ewentualnie najniższej wartości x jako tie-breaker).
+
+Sortowanie punktów: Sortujemy pozostałe punkty ze zbioru według kąta, jaki tworzą względem punktu startowego. Dzięki temu punkty są rozmieszczone w kolejności od najmniejszego kąta do największego kąta. W przypadku, gdy wiele punktów ma ten sam kąt, sortowane są względem odległości od punktu startowego (wzrostowo).
+
+Główna pętla: Algorytm przetwarza punkty w kolejności rosnących kątów. Początkowo dodajemy punkt startowy do otoczki wypukłej.
+
+Sprawdź kąt: Dla każdego punktu, który przetwarzamy, sprawdzamy, czy tworzy on odcinek wypukły w stosunku do ostatnich dwóch punktów na otoczce. Jeśli tak, dodajemy ten punkt do otoczki wypukłej.
+
+Aktualizacja otoczki: Jeśli punkt nie tworzy odcinka wypukłego, to usuwamy ostatni punkt otoczki i sprawdzamy punkt obecny ponownie w kontekście poprzedniego punktu na otoczce.
+
+Zakończenie: Algorytm kończy działanie, gdy wszystkie punkty zostały przetworzone, a otoczka wypukła została zakończona.
+
+Algorytm Grahama jest bardziej efektywny niż algorytm Jarvisa, szczególnie dla większych zbiorów punktów, dzięki zastosowaniu sortowania. Jest szeroko stosowany w praktyce do wyznaczania otoczki wypukłej i znajduje zastosowanie w grafice komputerowej, przetwarzaniu obrazów, a także w problemach planowania tras i analizy danych przestrzennych.
+
+
+
+
+

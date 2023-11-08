@@ -1,0 +1,22 @@
+\subsection{Algorytm Jarvisa}
+Algorytm Jarvisa, znany również jako algorytm "Zawijania prezentu" (ang. "Gift Wrapping"), to jedna z popularnych metod wyznaczania otoczki wypukłej dla zbioru punktów w przestrzeni dwuwymiarowej. Ten algorytm jest stosunkowo prosty w implementacji, choć ma złożoność czasową wynoszącą O(nh), gdzie "n" to liczba punktów w zbiorze, a "h" to liczba punktów na otoczce wypukłej.
+
+Poniżej przedstawiam kroki algorytmu Jarvisa:
+
+Wybierz punkt startowy: Na początek należy wybrać punkt startowy, który będzie częścią otoczki wypukłej. To może być dowolny punkt z dostępnego zbioru punktów, ale często wybiera się punkt o najniższej wartości współrzędnej y (jeśli istnieje więcej niż jeden taki punkt, wybiera się ten z najniższą wartością współrzędnej x).
+
+Inicjalizacja otoczki wypukłej: Ustalamy punkt startowy jako pierwszy punkt otoczki wypukłej.
+
+Znajdź kolejny punkt: W tej fazie algorytmu próbujemy znaleźć punkt z otoczki, który znajduje się na prawo od odcinka łączącego bieżący punkt otoczki z poprzednim punktem otoczki. To oznacza, że nowy punkt musi tworzyć odcinek wypukły w stosunku do bieżącej otoczki.
+
+Główna pętla: Algorytm działa w pętli, w której znajduje się następny punkt otoczki, który spełnia kryterium odcinka wypukłego, aż wróci do punktu początkowego, co oznacza, że otoczka została zamknięta.
+
+Aktualizacja otoczki: Po znalezieniu kolejnego punktu, dodajemy go do otoczki wypukłej.
+
+Zakończenie: Algorytm kończy działanie, gdy wróci do punktu początkowego, tworząc zamkniętą otoczkę wypukłą.
+
+Algorytm Jarvisa jest stosunkowo prosty, ale jego głównym ograniczeniem jest jego wysoka złożoność czasowa, co sprawia, że nie jest najbardziej wydajnym algorytmem w przypadku dużych zbiorów punktów. W praktyce bardziej efektywne są bardziej zaawansowane algorytmy, takie jak algorytm Grahama lub Quickhull. Jednak algorytm Jarvisa nadal znajduje zastosowanie w edukacji oraz w sytuacjach, gdy prostota implementacji jest ważniejsza niż wydajność.
+
+
+
+
