@@ -33,11 +33,14 @@ class TestCore:
             result, *output_expected = test_func(test_no, func, *args)
             timer_stop = process_time()
             self.sum_time += timer_stop - timer_start
-            result = 1
+
             if result == 1:
                 print("Passed")
                 counter += 1
             else:
-                print("Passed")
+                print("WRONG ANSWER")
+                print(f"\t\tOutput:   {output_expected[0]}")
+                print(f"\t\tExpected: {output_expected[1]}")
+    
 
         print(f"Result: {counter}/{self.tests_in[lab_no - 1][task_no - 1]}")
