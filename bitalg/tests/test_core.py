@@ -41,6 +41,5 @@ class TestCore:
                 print("WRONG ANSWER")
                 print(f"\t\tOutput:   {output_expected[0]}")
                 print(f"\t\tExpected: {output_expected[1]}")
-    
 
         print(f"Result: {counter}/{self.tests_in[lab_no - 1][task_no - 1]}")
