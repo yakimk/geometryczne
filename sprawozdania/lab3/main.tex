@@ -13,7 +13,7 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{amsmath, siunitx}    
-\graphicspath{ {./images/} }
+\graphicspath{ {./img/} }
 \makeatletter
 
 \begin{document}
@@ -32,14 +32,30 @@
 
 \section{Krótki opis ćwiczenia}
 \input{cwiczenie.tex}
-\section{Algorytm triangulacji}
+\input{z_testowe.tex}
+\section{Algorytmy}
+\subsection{Algorytm triangulacji}
 \input{opis.tex}
+\subsection{Algorytm sprawadzenia $y$-monotoniczności wielokąta}
+\quad Nasz algorytm najpierw dzieli wierzchołki na 5 rodzajów: 
+\begin{enumerate}
+    \item Początkowy gdy obaj jego sąsiedzi leżą
+    poniżej i kąt wewnętrzny $< \pi$.
+    \item Końcowy, gdy obaj jego sąsiedzi leżą
+    powyżej i kąt wewnętrzny $< \pi$.
+    \item Łączący, gdy obaj jego sąsiedzi leżą
+    powyżej i kąt wewnętrzny $> \pi$.
+    \item Dzielący, gdy obaj jego sąsiedzi leżą
+    poniżej i kąt wewnętrzny $> \pi$.
+    \item prawidłowy, gdy ma jednego sąsiada powyżej, drugiego - poniżej.
+\end{enumerate}
 
+Robi to licząc wyznacznik i odpowiednio porównując współrzędne swoich sąsiadów. 
+Wtedy sprawdzenie czy wielokąt jest $y-$monotoniczny sprowadza się do sprawdzenia, czy nasz 
+wielokąt posiada wierzchołki łączące lub dzielące. Jeśli tak - nie jest monotoniczny, w przeciwnym wypadku - jest.
 
-\section{Wyniki pomiarów}
-
-
-\section{Opracowanie wyników}
+\section{Wyniki triangulacji}
+\input{tri_wykresy.tex}
 \section{Podsumowanie}
 \input{wnioski.tex}
 \end{document}
