@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  21 NOV 2023 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.10)  23 NOV 2023 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/rio/f/inf/geometryczne/sprawozdania/lab3/main
-(/home/rio/f/inf/geometryczne/sprawozdania/lab3/main.tex
+**/home/rio/geometryczne/sprawozdania/lab3/main
+(/home/rio/geometryczne/sprawozdania/lab3/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./sprawozdanie-agh.cls
 Document Class: sprawozdanie-agh 
@@ -582,12 +582,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  12751 strings out of 480139
- 248698 string characters out of 5893692
+ 248680 string characters out of 5893692
  626597 words of memory out of 5000000
  30521 multiletter control sequences out of 15000+600000
  484373 words of font info for 61 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
- 70i,9n,77p,397b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,9n,77p,391b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on main.pdf (5 pages, 461373 bytes).
 PDF statistics:

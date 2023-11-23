@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  18 OCT 2023 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.10)  23 NOV 2023 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/rio/f/inf/geometryczne/sprawozdania/default/main
-(/home/rio/f/inf/geometryczne/sprawozdania/default/main.tex
+**/home/rio/geometryczne/sprawozdania/default/main
+(/home/rio/geometryczne/sprawozdania/default/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./sprawozdanie-agh.cls
 Document Class: sprawozdanie-agh 
@@ -667,12 +667,12 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  33086 strings out of 480139
- 823805 string characters out of 5893692
+ 823787 string characters out of 5893692
  1297212 words of memory out of 5000000
  50544 multiletter control sequences out of 15000+600000
  478497 words of font info for 42 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
- 84i,7n,89p,772b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,7n,89p,766b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk>
 Output written on main.pdf (2 pages, 73044 bytes).
 PDF statistics:

@@ -1,0 +1,2 @@
+Przeciecie powinno by wykrywane tylko jednokrotnie.
+Opisac to w spr.
