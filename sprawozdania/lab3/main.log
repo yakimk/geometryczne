@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.10)  23 NOV 2023 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  23 NOV 2023 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/rio/geometryczne/sprawozdania/lab3/main
-(/home/rio/geometryczne/sprawozdania/lab3/main.tex
+**/home/rio/f/inf/geometryczne/sprawozdania/lab3/main
+(/home/rio/f/inf/geometryczne/sprawozdania/lab3/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./sprawozdanie-agh.cls
 Document Class: sprawozdanie-agh 
@@ -539,39 +539,38 @@ Package pdftex.def Info: ./img//polygon_50.png  used on input line 45.
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <13> not available
 (Font)              size <12> substituted on input line 4.
 
-[3 <./img//polygon_weird.png> <./img//polygon_weird_2.png> <./img//polygon_weird_3.png> <./img//polygon_50.png>]) (./tri_wykresy.tex
-<./img//polygon_5-tri.png, id=41, 462.528pt x 346.896pt>
+[3 <./img//polygon_weird.png> <./img//polygon_weird_2.png> <./img//polygon_weird_3.png> <./img//polygon_50.png>]) [4] (./tri_wykresy.tex
+<./img//polygon_5-tri.png, id=44, 462.528pt x 346.896pt>
 File: ./img//polygon_5-tri.png Graphic file (type png)
 <use ./img//polygon_5-tri.png>
 Package pdftex.def Info: ./img//polygon_5-tri.png  used on input line 5.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//christmas_tree-tri.png, id=42, 462.528pt x 346.896pt>
+<./img//christmas_tree-tri.png, id=45, 462.528pt x 346.896pt>
 File: ./img//christmas_tree-tri.png Graphic file (type png)
 <use ./img//christmas_tree-tri.png>
 Package pdftex.def Info: ./img//christmas_tree-tri.png  used on input line 11.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
- [4 <./img//polygon_5-tri.png> <./img//christmas_tree-tri.png>]
-<./img//polygon_weird-tri.png, id=48, 462.528pt x 346.896pt>
+<./img//polygon_weird-tri.png, id=46, 462.528pt x 346.896pt>
 File: ./img//polygon_weird-tri.png Graphic file (type png)
 <use ./img//polygon_weird-tri.png>
 Package pdftex.def Info: ./img//polygon_weird-tri.png  used on input line 24.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird_2-tri.png, id=49, 462.528pt x 346.896pt>
+<./img//polygon_weird_2-tri.png, id=47, 462.528pt x 346.896pt>
 File: ./img//polygon_weird_2-tri.png Graphic file (type png)
 <use ./img//polygon_weird_2-tri.png>
 Package pdftex.def Info: ./img//polygon_weird_2-tri.png  used on input line 30.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird_3-tri.png, id=50, 462.528pt x 346.896pt>
+<./img//polygon_weird_3-tri.png, id=48, 462.528pt x 346.896pt>
 File: ./img//polygon_weird_3-tri.png Graphic file (type png)
 <use ./img//polygon_weird_3-tri.png>
 Package pdftex.def Info: ./img//polygon_weird_3-tri.png  used on input line 39.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_50-tri.png, id=51, 462.528pt x 346.896pt>
+<./img//polygon_50-tri.png, id=49, 462.528pt x 346.896pt>
 File: ./img//polygon_50-tri.png Graphic file (type png)
 <use ./img//polygon_50-tri.png>
 Package pdftex.def Info: ./img//polygon_50-tri.png  used on input line 45.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-) (./wnioski.tex) [5 <./img//polygon_weird-tri.png> <./img//polygon_weird_2-tri.png> <./img//polygon_weird_3-tri.png> <./img//polygon_50-tri.png>] (./main.aux)
+) (./wnioski.tex) [5 <./img//polygon_5-tri.png> <./img//christmas_tree-tri.png> <./img//polygon_weird-tri.png> <./img//polygon_weird_2-tri.png> <./img//polygon_weird_3-tri.png> <./img//polygon_50-tri.png>] [6] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -582,17 +581,17 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  12751 strings out of 480139
- 248680 string characters out of 5893692
- 626597 words of memory out of 5000000
+ 248698 string characters out of 5893692
+ 628597 words of memory out of 5000000
  30521 multiletter control sequences out of 15000+600000
  484373 words of font info for 61 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
- 70i,9n,77p,391b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,9n,77p,397b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (5 pages, 461373 bytes).
+Output written on main.pdf (6 pages, 473294 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 371 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 

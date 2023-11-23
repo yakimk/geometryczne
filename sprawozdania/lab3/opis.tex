@@ -27,5 +27,7 @@ Wyniki przechowujemy w liscie.
 
 Przedstawiony algorytm jest efektywny i działa w czasie \(O(n \log n)\), gdzie \(n\) to liczba wierzchołków wielokąta. Triangulacja wielokąta monotonicznego jest często stosowana w grafice komputerowej i w problemach geometrii obliczeniowej.
 
-Struktura przechowująca wielokąt opiera się na posortowanej liście wierzchołków oraz słownika, za pomocą którego możemy szybko sprawdzić do którego z łancuchów należy rozpatrywany wierzchołek. 
+Struktura przechowująca wielokąt opiera się na posortowanej liście wierzchołków oraz listy, za pomocą której możemy szybko sprawdzić do którego z łancuchów należy rozpatrywany wierzchołek. 
 Jest to potrzebne przy sprawdzaniu czy linia między punktami jest wewnątrz wielokąta.
+
+Wynikiem końcowym algorytmu jest krotka, której pierwszym elementem jest wielokąt początkowy, a drugim triangulacja w postaci par indeksów punktów, pomiędzy którymi należy przeprowadzić przekątne, żeby uzyskać triangulacje.
