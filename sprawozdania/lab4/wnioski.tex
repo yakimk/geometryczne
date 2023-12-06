@@ -1,0 +1,11 @@
+\quad 
+Wszystkie zaimplementowane procedury i algorytmy zadziałały poprawnie dla testowanych wielokątów. 
+Ponadto algorytm poprawnie nie generuje duplikatów krawędzi. 
+Użyte struktury danych doskonale pasowały do zadanych problemów - pozwalały na szybki dostęp do potrzebnych elementów, nie wymagały dodatkowych konwersji. 
+
+
+Jedną ze zmian, którą trzeba było zrealizować było zwracanie w wyniku triangulacji, zarówno oryginalnego 
+wielokąta jak i triangulacji po indeksach. To pozwala na wygodny odczyt tej struktury i możliwości szybkiej wizualizacji wyników. Także 
+ten sposób przechowywania wyniku algorytmu uniemożliwia błędy związane ze złym dopasowaniem triangulacji do właściwego wielokąta, gdyż zarówno wielokąt, jak i wynik są przechowywane razem. 
+Jeszcze jedną rzeczą na którą trzeba było zwrócić uwagę była reprezentacja triangulacji jako listy par indeksów wierzchołków, zamiast listy par współrzędnych wierzchołków. 
+To pozwala przede wszystkim na zmiejszenie ilości używanej pamięci, ale również jest bardziej eleganckim rowiązaniem, które upraszcza implementacje algorytmu.

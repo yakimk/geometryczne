@@ -1,0 +1,61 @@
+\documentclass{sprawozdanie-agh}
+
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{accsupp}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath, siunitx}    
+\graphicspath{ {./img/} }
+\makeatletter
+
+\begin{document}
+
+\przedmiot{Algorytmy geometryczne}
+\tytul{Laboratorium 4}
+\podtytul{Przecinanie się odcinków}
+\kierunek{Informatyka}
+\autor{Kyrylo Iakymenko}
+\data{Kraków, 5 grudnia 2023}
+
+\stronatytulowa{}
+
+\section{Wprowadzenie}
+\input{wprowadzenie.tex}
+
+\section{Krótki opis ćwiczenia}
+\input{cwiczenie.tex}
+\input{z_testowe.tex}
+\section{Algorytmy}
+\subsection{Algorytm triangulacji}
+\input{opis.tex}
+\subsection{Algorytm sprawadzenia $y$-monotoniczności wielokąta}
+\quad Nasz algorytm najpierw dzieli wierzchołki na 5 rodzajów: 
+\begin{enumerate}
+    \item Początkowy gdy obaj jego sąsiedzi leżą
+    poniżej i kąt wewnętrzny $< \pi$.
+    \item Końcowy, gdy obaj jego sąsiedzi leżą
+    powyżej i kąt wewnętrzny $< \pi$.
+    \item Łączący, gdy obaj jego sąsiedzi leżą
+    powyżej i kąt wewnętrzny $> \pi$.
+    \item Dzielący, gdy obaj jego sąsiedzi leżą
+    poniżej i kąt wewnętrzny $> \pi$.
+    \item prawidłowy, gdy ma jednego sąsiada powyżej, drugiego - poniżej.
+\end{enumerate}
+
+Robi to licząc wyznacznik i odpowiednio porównując współrzędne swoich sąsiadów. 
+Wtedy sprawdzenie czy wielokąt jest $y-$monotoniczny sprowadza się do sprawdzenia, czy nasz 
+wielokąt posiada wierzchołki łączące lub dzielące. Jeśli tak - nie jest monotoniczny, w przeciwnym wypadku - jest.
+\newpage
+\section{Wyniki triangulacji}
+\input{tri_wykresy.tex}
+\section{Podsumowanie}
+\input{wnioski.tex}
+\end{document}

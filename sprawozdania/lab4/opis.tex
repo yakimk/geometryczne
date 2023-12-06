@@ -1,0 +1,33 @@
+\quad Triangulacja wielokąta monotonicznego to proces podziału wielokąta na trójkąty, zachowując przy tym monotoniczność. Wielokąt $y$-monotoniczny to taki, którego prosta pozioma przecina go maksymalnie dwukrotnie. Algorytm triangulacji wielokąta monotonicznego można opisać w kilku krokach:
+
+\begin{enumerate}
+\item \textbf{Sortuj wierzchołki:} Posortuj malejąco wierzchołki wielokąta względem ich współrzędnej $y$. Dodaj dwa pierwsze wierzchołki do stosu.
+
+\item \textbf{Podziel wierzchołki na lewy i prawy łańcuchy:} Za pomocą algorytmu działającego w $O(n)$ dzielimy wierzchołki na należące do prawego ido lewego łancuchów. 
+Wyniki przechowujemy w liscie.
+
+\item \textbf{Główna pętla:} Dla każdego z kolenych wierzchołków od $i = 3$ do $i = n-1$ sprawdzamy czy jest na tym samym łancuchu co poprzedni
+
+\begin{itemize}
+    \item jeżeli tak, 
+    dodajemy nasz punkt na stos
+    sprawdzamy za pomocą wyznacznika czy prosta pomiędzy pierwszym a trzecim wierzchołkami na stosie zawiera się w wielokącie, jeśli tak to tworzymy prostą między nimi, następnie usuwamy drugi wierzchołek na stosie.
+    
+    
+    \item jeżeli nie, 
+    ususwamy pierwszy wierzchołek $p$ ze stosu,
+    tworzymy prostą między nim a wszystkimi wierzchołkami na stosie oprócz ostatniego, a następnie dodajemy na stos badany wierzchołek oraz wierzchołek poprzedzający $p$.
+\end{itemize}
+
+\item \textbf{Połacz wierzchołki na stosie: } W kroku ostatnim łączymy wierzchołki, które pozostały na stosie, oprócz pierwszego i ostatniego, z wierzchołkiem o najmniejszej wspólrzędnej $y$.
+\item \textbf{Zwróć listę połaczonych par wierżchołków}
+
+\end{enumerate}
+
+
+Przedstawiony algorytm jest efektywny i działa w czasie \(O(n \log n)\), gdzie \(n\) to liczba wierzchołków wielokąta. Triangulacja wielokąta monotonicznego jest często stosowana w grafice komputerowej i w problemach geometrii obliczeniowej.
+
+Struktura przechowująca wielokąt opiera się na posortowanej liście wierzchołków oraz listy, za pomocą której możemy szybko sprawdzić do którego z łancuchów należy rozpatrywany wierzchołek. 
+Jest to potrzebne przy sprawdzaniu czy linia między punktami jest wewnątrz wielokąta.
+
+Wynikiem końcowym algorytmu jest krotka, której pierwszym elementem jest wielokąt początkowy, a drugim triangulacja w postaci par indeksów punktów, pomiędzy którymi należy przeprowadzić przekątne, żeby uzyskać triangulacje.
