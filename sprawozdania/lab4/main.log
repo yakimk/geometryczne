@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  5 DEC 2023 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.11)  6 DEC 2023 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,109 +468,106 @@ Package pdftex.def Info: ./img/logo-agh.jpg  used on input line 28.
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 28.
 
-(./wprowadzenie.tex) (./cwiczenie.tex
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
-
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 4.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 4.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 4.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 4.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 4.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
-
-) (./z_testowe.tex
-<./img//polygon_5.png, id=15, 462.528pt x 346.896pt>
-File: ./img//polygon_5.png Graphic file (type png)
-<use ./img//polygon_5.png>
-Package pdftex.def Info: ./img//polygon_5.png  used on input line 5.
+(./wprowadzenie.tex) (./cwiczenie.tex) (./z_testowe.tex
+<./img//0.png, id=15, 462.528pt x 346.896pt>
+File: ./img//0.png Graphic file (type png)
+<use ./img//0.png>
+Package pdftex.def Info: ./img//0.png  used on input line 5.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//christmas_tree.png, id=17, 462.528pt x 346.896pt>
-File: ./img//christmas_tree.png Graphic file (type png)
-<use ./img//christmas_tree.png>
-Package pdftex.def Info: ./img//christmas_tree.png  used on input line 11.
+<./img//1.png, id=17, 462.528pt x 346.896pt>
+File: ./img//1.png Graphic file (type png)
+<use ./img//1.png>
+Package pdftex.def Info: ./img//1.png  used on input line 11.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
- [2 <./img//polygon_5.png> <./img//christmas_tree.png>]
-<./img//polygon_weird.png, id=28, 462.528pt x 346.896pt>
-File: ./img//polygon_weird.png Graphic file (type png)
-<use ./img//polygon_weird.png>
-Package pdftex.def Info: ./img//polygon_weird.png  used on input line 24.
+ [2 <./img//0.png> <./img//1.png>]
+<./img//2.png, id=26, 462.528pt x 346.896pt>
+File: ./img//2.png Graphic file (type png)
+<use ./img//2.png>
+Package pdftex.def Info: ./img//2.png  used on input line 24.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird_2.png, id=29, 462.528pt x 346.896pt>
-File: ./img//polygon_weird_2.png Graphic file (type png)
-<use ./img//polygon_weird_2.png>
-Package pdftex.def Info: ./img//polygon_weird_2.png  used on input line 30.
+<./img//3.png, id=27, 462.528pt x 346.896pt>
+File: ./img//3.png Graphic file (type png)
+<use ./img//3.png>
+Package pdftex.def Info: ./img//3.png  used on input line 30.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird_3.png, id=30, 462.528pt x 346.896pt>
-File: ./img//polygon_weird_3.png Graphic file (type png)
-<use ./img//polygon_weird_3.png>
-Package pdftex.def Info: ./img//polygon_weird_3.png  used on input line 39.
+<./img//4.png, id=28, 462.528pt x 346.896pt>
+File: ./img//4.png Graphic file (type png)
+<use ./img//4.png>
+Package pdftex.def Info: ./img//4.png  used on input line 39.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_50.png, id=31, 462.528pt x 346.896pt>
-File: ./img//polygon_50.png Graphic file (type png)
-<use ./img//polygon_50.png>
-Package pdftex.def Info: ./img//polygon_50.png  used on input line 45.
+<./img//5.png, id=29, 462.528pt x 346.896pt>
+File: ./img//5.png Graphic file (type png)
+<use ./img//5.png>
+Package pdftex.def Info: ./img//5.png  used on input line 45.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
 ) (./opis.tex
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
+(Font)              size <12> substituted on input line 6.
 
-[3 <./img//polygon_weird.png> <./img//polygon_weird_2.png> <./img//polygon_weird_3.png> <./img//polygon_50.png>]) [4] (./tri_wykresy.tex
-<./img//polygon_5-tri.png, id=44, 462.528pt x 346.896pt>
-File: ./img//polygon_5-tri.png Graphic file (type png)
-<use ./img//polygon_5-tri.png>
-Package pdftex.def Info: ./img//polygon_5-tri.png  used on input line 5.
+[3 <./img//2.png> <./img//3.png> <./img//4.png> <./img//5.png>]
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 29.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 29.
+
+) [4] (./tri_wykresy.tex
+<./img//0_int.png, id=43, 462.528pt x 346.896pt>
+File: ./img//0_int.png Graphic file (type png)
+<use ./img//0_int.png>
+Package pdftex.def Info: ./img//0_int.png  used on input line 5.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//christmas_tree-tri.png, id=45, 462.528pt x 346.896pt>
-File: ./img//christmas_tree-tri.png Graphic file (type png)
-<use ./img//christmas_tree-tri.png>
-Package pdftex.def Info: ./img//christmas_tree-tri.png  used on input line 11.
+<./img//1_int.png, id=44, 462.528pt x 346.896pt>
+File: ./img//1_int.png Graphic file (type png)
+<use ./img//1_int.png>
+Package pdftex.def Info: ./img//1_int.png  used on input line 11.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird-tri.png, id=46, 462.528pt x 346.896pt>
-File: ./img//polygon_weird-tri.png Graphic file (type png)
-<use ./img//polygon_weird-tri.png>
-Package pdftex.def Info: ./img//polygon_weird-tri.png  used on input line 24.
+<./img//2_int.png, id=45, 462.528pt x 346.896pt>
+File: ./img//2_int.png Graphic file (type png)
+<use ./img//2_int.png>
+Package pdftex.def Info: ./img//2_int.png  used on input line 24.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird_2-tri.png, id=47, 462.528pt x 346.896pt>
-File: ./img//polygon_weird_2-tri.png Graphic file (type png)
-<use ./img//polygon_weird_2-tri.png>
-Package pdftex.def Info: ./img//polygon_weird_2-tri.png  used on input line 30.
+<./img//3_int.png, id=46, 462.528pt x 346.896pt>
+File: ./img//3_int.png Graphic file (type png)
+<use ./img//3_int.png>
+Package pdftex.def Info: ./img//3_int.png  used on input line 30.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_weird_3-tri.png, id=48, 462.528pt x 346.896pt>
-File: ./img//polygon_weird_3-tri.png Graphic file (type png)
-<use ./img//polygon_weird_3-tri.png>
-Package pdftex.def Info: ./img//polygon_weird_3-tri.png  used on input line 39.
+<./img//4_int.png, id=47, 462.528pt x 346.896pt>
+File: ./img//4_int.png Graphic file (type png)
+<use ./img//4_int.png>
+Package pdftex.def Info: ./img//4_int.png  used on input line 39.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<./img//polygon_50-tri.png, id=49, 462.528pt x 346.896pt>
-File: ./img//polygon_50-tri.png Graphic file (type png)
-<use ./img//polygon_50-tri.png>
-Package pdftex.def Info: ./img//polygon_50-tri.png  used on input line 45.
+<./img//5_int.png, id=48, 462.528pt x 346.896pt>
+File: ./img//5_int.png Graphic file (type png)
+<use ./img//5_int.png>
+Package pdftex.def Info: ./img//5_int.png  used on input line 45.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-) (./wnioski.tex) [5 <./img//polygon_5-tri.png> <./img//christmas_tree-tri.png> <./img//polygon_weird-tri.png> <./img//polygon_weird_2-tri.png> <./img//polygon_weird_3-tri.png> <./img//polygon_50-tri.png>] [6] (./main.aux)
+) (./wnioski.tex [5 <./img//0_int.png> <./img//1_int.png> <./img//2_int.png> <./img//3_int.png> <./img//4_int.png> <./img//5_int.png>]) [6] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -580,18 +577,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12751 strings out of 480139
- 248698 string characters out of 5893692
- 628597 words of memory out of 5000000
- 30521 multiletter control sequences out of 15000+600000
- 484373 words of font info for 61 fonts, out of 8000000 for 9000
+ 12747 strings out of 480139
+ 247529 string characters out of 5893692
+ 626597 words of memory out of 5000000
+ 30518 multiletter control sequences out of 15000+600000
+ 484036 words of font info for 60 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
  70i,9n,77p,563b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (6 pages, 472820 bytes).
+ </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/rio/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (6 pages, 455241 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 318 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 

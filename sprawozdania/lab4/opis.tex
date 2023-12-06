@@ -1,33 +1,35 @@
-\quad Triangulacja wielokąta monotonicznego to proces podziału wielokąta na trójkąty, zachowując przy tym monotoniczność. Wielokąt $y$-monotoniczny to taki, którego prosta pozioma przecina go maksymalnie dwukrotnie. Algorytm triangulacji wielokąta monotonicznego można opisać w kilku krokach:
+\quad Algorytm zamiatania (ang. sweep line algorithm) to efektywna metoda rozwiązania problemu wyznaczania przecięcia się odcinków na płaszczyźnie. Algorytm ten można opisać w kilku krokach:
+
 
 \begin{enumerate}
-\item \textbf{Sortuj wierzchołki:} Posortuj malejąco wierzchołki wielokąta względem ich współrzędnej $y$. Dodaj dwa pierwsze wierzchołki do stosu.
-
-\item \textbf{Podziel wierzchołki na lewy i prawy łańcuchy:} Za pomocą algorytmu działającego w $O(n)$ dzielimy wierzchołki na należące do prawego ido lewego łancuchów. 
-Wyniki przechowujemy w liscie.
-
-\item \textbf{Główna pętla:} Dla każdego z kolenych wierzchołków od $i = 3$ do $i = n-1$ sprawdzamy czy jest na tym samym łancuchu co poprzedni
-
-\begin{itemize}
-    \item jeżeli tak, 
-    dodajemy nasz punkt na stos
-    sprawdzamy za pomocą wyznacznika czy prosta pomiędzy pierwszym a trzecim wierzchołkami na stosie zawiera się w wielokącie, jeśli tak to tworzymy prostą między nimi, następnie usuwamy drugi wierzchołek na stosie.
+    \item 
+    \textbf{Sortowanie punktów końcowych odcinków:}
+    Algorytm rozpoczyna się od posortowania punktów końcowych odcinków według współrzędnej x. Dzięki temu możemy ustalić kolejność, w jakiej algorytm będzie przetwarzał odcinki.
     
-    
-    \item jeżeli nie, 
-    ususwamy pierwszy wierzchołek $p$ ze stosu,
-    tworzymy prostą między nim a wszystkimi wierzchołkami na stosie oprócz ostatniego, a następnie dodajemy na stos badany wierzchołek oraz wierzchołek poprzedzający $p$.
-\end{itemize}
+    \item  \textbf{Sweepline:}
+Algorytm używa 'miotły', która przesuwa się przez posortowane punkty. Linia ta reprezentuje aktualne położenie algorytmu na płaszczyźnie.
 
-\item \textbf{Połacz wierzchołki na stosie: } W kroku ostatnim łączymy wierzchołki, które pozostały na stosie, oprócz pierwszego i ostatniego, z wierzchołkiem o najmniejszej wspólrzędnej $y$.
-\item \textbf{Zwróć listę połaczonych par wierżchołków}
+\item  \textbf{Struktura danych do przechowywania aktywnych odcinków:}
+Tworzona jest struktura danych, najczęściej używane to drzewo binarne przeszukiwań lub struktura zrównoważona, które przechowuje aktualnie przecinane przez sweepline odcinki.
+
+\item  \textbf{Przeszukiwanie sweepline:}
+Sweepline przemieszcza się przez posortowane punkty, a w miarę tego ruchu algorytm aktualizuje strukturę danych, śledząc, które odcinki są obecnie przecinane przez sweepline.
+
+\item  \textbf{Znajdowanie przecięć:}
+Przy każdym ruchu sweepline, algorytm sprawdza, czy doszło do przecięcia pomiędzy aktualnym odcinkiem, a innymi odcinkami znajdującymi się nad lub pod sweepline. W przypadku wykrycia przecięcia, jest ono rejestrowane.
+
+\item  \textbf{Obsługa przypadków szczególnych:}
+Algorytm uwzględnia różne przypadki przecięć, takie jak przecięcia proste, styczne, czy nakładające się odcinki. Obsługuje również sytuacje szczególne, takie jak wspólne punkty i brzegi odcinków.
+
+\item  \textbf{Aktualizacja struktury danych:}
+W miarę poruszania się sweepline, struktura danych jest aktualizowana, a odcinki, które już zostały przetworzone, są usuwane z niej.
 
 \end{enumerate}
 
+Algorytm zamiatania jest stosunkowo prosty do zrozumienia i implementacji, a jego złożoność czasowa wynosi $O(n log n)$, gdzie n to liczba odcinków. Działa efektywnie, zwłaszcza w przypadku dużych zbiorów danych, co czyni go popularnym narzędziem w problemach związanych z geometrią obliczeniową.
 
-Przedstawiony algorytm jest efektywny i działa w czasie \(O(n \log n)\), gdzie \(n\) to liczba wierzchołków wielokąta. Triangulacja wielokąta monotonicznego jest często stosowana w grafice komputerowej i w problemach geometrii obliczeniowej.
 
-Struktura przechowująca wielokąt opiera się na posortowanej liście wierzchołków oraz listy, za pomocą której możemy szybko sprawdzić do którego z łancuchów należy rozpatrywany wierzchołek. 
-Jest to potrzebne przy sprawdzaniu czy linia między punktami jest wewnątrz wielokąta.
 
-Wynikiem końcowym algorytmu jest krotka, której pierwszym elementem jest wielokąt początkowy, a drugim triangulacja w postaci par indeksów punktów, pomiędzy którymi należy przeprowadzić przekątne, żeby uzyskać triangulacje.
+
+
+
