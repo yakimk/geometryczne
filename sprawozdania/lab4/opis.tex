@@ -2,31 +2,22 @@
 
 
 \begin{enumerate}
+    \item \textbf{Tworzenie listy zdarzeń:} Najpierw dla każdego odcinka dodajemy do listy jego punkt początkowy, oznaczając jako zdarzenie początku odcinka i końcowy, oznaczając go odpowiednio, jako zdarzenia końca odcinka.
     \item 
-    \textbf{Sortowanie punktów końcowych odcinków:}
-    Algorytm rozpoczyna się od posortowania punktów końcowych odcinków według współrzędnej x. Dzięki temu możemy ustalić kolejność, w jakiej algorytm będzie przetwarzał odcinki.
+    \textbf{Sortowanie punktów listy zdarzeń:}
+    Sortujemy listę zdarzeń po współrzędnej $x$ punktów do niej należących.
     
-    \item  \textbf{Sweepline:}
-Algorytm używa 'miotły', która przesuwa się przez posortowane punkty. Linia ta reprezentuje aktualne położenie algorytmu na płaszczyźnie.
+    \item  \textbf{Pętla główna:}
+    Dla każdego zdarzenia z listy zdarzeń, sprawdzamy czy jest zdarzeniem początkowym, w tym przypadku dodajemy go do Sortedset (zbioru posortowanego). Jeżeli mamy doczynienie z punktem końcowym - usuwamy go z naszego zbioru.
 
-\item  \textbf{Struktura danych do przechowywania aktywnych odcinków:}
-Tworzona jest struktura danych, najczęściej używane to drzewo binarne przeszukiwań lub struktura zrównoważona, które przechowuje aktualnie przecinane przez sweepline odcinki.
+\item  \textbf{Pętla wewnętrzna:}
+W przypadku odcinku początkowego, sprawdzamy czy się przecina z którymś z aktywnych odcinków (odcinków ze zbioru posortowanego), jeżeli współrzędna $x$ naszego punktu (zdarzenia) jest większa od współrzędnej $x$ rozpatrywanego zdarzenia oraz te odcinki się przecinają - dodajemy przecięcie do listy przecieć razem z indeksami prostych, które się przecinają.
 
-\item  \textbf{Przeszukiwanie sweepline:}
-Sweepline przemieszcza się przez posortowane punkty, a w miarę tego ruchu algorytm aktualizuje strukturę danych, śledząc, które odcinki są obecnie przecinane przez sweepline.
-
-\item  \textbf{Znajdowanie przecięć:}
-Przy każdym ruchu sweepline, algorytm sprawdza, czy doszło do przecięcia pomiędzy aktualnym odcinkiem, a innymi odcinkami znajdującymi się nad lub pod sweepline. W przypadku wykrycia przecięcia, jest ono rejestrowane.
-
-\item  \textbf{Obsługa przypadków szczególnych:}
-Algorytm uwzględnia różne przypadki przecięć, takie jak przecięcia proste, styczne, czy nakładające się odcinki. Obsługuje również sytuacje szczególne, takie jak wspólne punkty i brzegi odcinków.
-
-\item  \textbf{Aktualizacja struktury danych:}
-W miarę poruszania się sweepline, struktura danych jest aktualizowana, a odcinki, które już zostały przetworzone, są usuwane z niej.
-
+\item  \textbf{Wynik:}
+Zwracamy listę przecięć i indeksów odcinków.
 \end{enumerate}
 
-Algorytm zamiatania jest stosunkowo prosty do zrozumienia i implementacji, a jego złożoność czasowa wynosi $O(n log n)$, gdzie n to liczba odcinków. Działa efektywnie, zwłaszcza w przypadku dużych zbiorów danych, co czyni go popularnym narzędziem w problemach związanych z geometrią obliczeniową.
+% Algorytm zamiatania jest stosunkowo prosty do zrozumienia i implementacji, a jego złożoność czasowa wynosi $O(n log n)$, gdzie n to liczba odcinków. Działa efektywnie, zwłaszcza w przypadku dużych zbiorów danych, co czyni go popularnym narzędziem w problemach związanych z geometrią obliczeniową.
 
 
 
