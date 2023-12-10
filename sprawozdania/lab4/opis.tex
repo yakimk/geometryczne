@@ -2,21 +2,34 @@
 
 
 \begin{enumerate}
-    \item \textbf{Tworzenie listy zdarzeń:} Najpierw dla każdego odcinka dodajemy do listy jego punkt początkowy, oznaczając jako zdarzenie początku odcinka i końcowy, oznaczając go odpowiednio, jako zdarzenia końca odcinka.
-    \item 
-    \textbf{Sortowanie punktów listy zdarzeń:}
-    Sortujemy listę zdarzeń po współrzędnej $x$ punktów do niej należących.
-    
+    \item \textbf{Tworzenie listy zdarzeń:} Każde zdarzenie jest punktem. Zdarzenia przechowujemy w zbiorze posortowanym (Sorted Set), które są posortowane ze względu na swoją współrzędną $x$.
     \item  \textbf{Pętla główna:}
-    Dla każdego zdarzenia z listy zdarzeń, sprawdzamy czy jest zdarzeniem początkowym, w tym przypadku dodajemy go do Sortedset (zbioru posortowanego). Jeżeli mamy doczynienie z punktem końcowym - usuwamy go z naszego zbioru.
+    Po kolei wyciągamy zdarzenia z listy zdarzeń i obsługujemy je za pomocą funkcji handle\_event.
 
-\item  \textbf{Pętla wewnętrzna:}
-W przypadku odcinku początkowego, sprawdzamy czy się przecina z którymś z aktywnych odcinków (odcinków ze zbioru posortowanego), jeżeli współrzędna $x$ naszego punktu (zdarzenia) jest większa od współrzędnej $x$ rozpatrywanego zdarzenia oraz te odcinki się przecinają - dodajemy przecięcie do listy przecieć razem z indeksami prostych, które się przecinają.
+\item  \textbf{Pętla wewnętrzna (handle\_event):}
+Najpierw sprawdzamy czy zdarzenie jest zdarzeniem początku lub końca odcinka (odpowiedną informację przechowujemy w słowniku, żeby zapewnić szybki dostęp).
 
+Jeżeli nasze zdarzenie jest zdarzeniem początku odcinka - dodajemy odcinek do zbioru posortowanego z odcinkami, które przecina masza miotła i sprawdzamy czy nie przecina swoich sąsiadów. Jeżeli wykrywamy przecięcie - dodajemy go do zbioru posortowanego wydarzeń.
+
+Jeżeli zdarzenie jest zdarzeniem końca odcinka, usuwamy go z listy odcinków przecinających naszą miotłę.
+
+Jeżeli zdarzenie jest zdarzeniem przecięcia się odcinków - sprawdzamy najpierw czy nie dodaliśmy już przecięcia tej pary odcinków (używamy do tego celu słowniku, w którym przechowujemy pary prostych, przecięcia których już zostały zarejestrowane). 
+A pod koniec aktualizujemy (sortujemy) zbiór prostych przecinających miotłę, ze względu na ich współrzędną $y$ po tym przecięciu.
 \item  \textbf{Wynik:}
 Zwracamy listę przecięć i indeksów odcinków.
 \end{enumerate}
 
+\subsection{Struktury zdarzeń i stanu miotły} 
+
+Zarówno struktura zdarzeń, jak i struktura stanu miotły była zaimplementowana za pomocą zbioru posortowanego (Sorted Set) w pythonie. W przypadku miotły przechowujemy w zbiorze odcinki (objekty klasy Line), posortowane ze wzgłedu na współrzędną $y$ w punkcie $x$, który był punktem ostaniego zdarzenia. Zbiór zdarzeń sortujemy po współrzędnej $x$ każdego zdarzenia (zdarzenia w naszym przypadku, to po prostu punkty).
+
+\subsection{Wykrywanie przecięć wielokrotnych} 
+
+Żeby zapobiec sytuacji, w której zapisujemy jedno przecięcie wiele razy, używamy słownkika, do którego zapisujemy pary prostych, przecięcia których jużzostały zarejestrowane. Przykolejnych przecięciach sprawdzamy czy dana para prostych nie wystąpiła już wcześniej. Słownik w pythonie pozwala na szybkie sprawdzenie czy dany klucz już był zapisany do tego słownika, co pozwala nie trtacić na tej operacji złożoności.
+
+\subsection{Wykrywanie przecięć wielokrotnych w algorymtie, który sprawdza czy w zbiorze prostych występują przecięcia}
+
+Nie musimy wykonywać podobnych operacji w przypadku tego algorymtu, gdyz wykrycie jednego przecięcia już powoduje zatrzymanie programu.
 % Algorytm zamiatania jest stosunkowo prosty do zrozumienia i implementacji, a jego złożoność czasowa wynosi $O(n log n)$, gdzie n to liczba odcinków. Działa efektywnie, zwłaszcza w przypadku dużych zbiorów danych, co czyni go popularnym narzędziem w problemach związanych z geometrią obliczeniową.
 
 
